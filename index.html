@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome link for icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <title>KinderGarten</title>
+    <style>
+       *{
+        margin: 0px;
+        padding: 0px;
+       }
+       header{
+        
+        box-shadow: 0px 2px 10px 2px rgb(187, 187, 187);
+        padding: 10px 0px;
+       }
+       header nav{
+        display: flex;
+        justify-content: space-between;
+        margin: 0% 10%;
+        padding: 10px;
+       }
+       .common_color{
+        color: rgb(66,63,141);
+       }
+       header nav ul li{
+        display: inline-block;
+        margin-left: 50px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(66,63,141);
+       }
+       header nav ul li button{
+            background-color: rgb(18,217,223);
+            border-radius: 20px;
+            padding: 12px;
+            font-weight: bold;
+            border: none;
+            width: 120px;
+            color: white;
+       }
+       .our_section{
+        margin-top: 40px;
+        padding: 0% 15%;
+       }
+       .our_heading{
+        padding: 0% 18%;
+       }
+       .our_heading h1{
+        text-align: center;
+        font-family:"Fredoka One", cursive;
+        font-size: 30px;
+       }
+       .our_heading h1 span{
+        color: rgb(237,7,139);
+       }
+
+       .our_heading p{
+        margin-top: 10px;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        margin-bottom: 50px;
+        color: rgb(66,63,141);;
+       }
+       .our_details{
+        display: flex;
+        margin: auto;
+       }
+       .our_details_left_part{
+        width: 40%;
+        margin: 40px;
+       }
+       .our_image_part{
+        width: 50%;
+       }
+       .our_image_part img{
+        width: 100%;
+       }
+       .our_part_logos{
+        float: left;
+        width: 20%;
+        margin-top: 30px;
+
+       }
+       .our_part_logos img{
+        height: 50px;
+       }
+       .our_part_logos_info{
+        width: 80%;
+        float: left;
+        margin-top: 20px;
+        color: rgb(66,63,141);
+       }
+       .our_part_logos_info p{
+        font-family: "DM Sans", sans-serif;
+        margin-top: 10px;
+       }
+       .we_offer{
+        background-color: rgb(255,242,249);
+        padding: 3% 10%;
+        margin-top: 20px;
+       }
+       .We_offer_heading{
+        text-align: center;
+        padding:0% 18%;
+       }
+       .We_offer_heading h1{
+        text-align: center;
+        font-family:"Fredoka One",cursive;
+        font-size: 35px;
+        font-weight: bold;
+       }
+       .We_offer_heading p{
+        margin-top: 10px;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        margin-bottom: 50px;
+        color: rgb(66,63,141);;
+       }
+       .boxes{
+        display: flex;
+        justify-content: space-between;
+       }
+       .cart{
+            width: 30%;
+            border-radius: 20px;
+            background-color: white;
+
+       }
+       .cart .cart_body{
+        padding: 20px;
+       }
+       .cart .cart_body h2{
+        font-family: "Fredoka One",cursive;
+        font-weight: bold;
+       }
+       .cart .cart_body p, .cart_footer p{
+        margin-top: 10px;
+        font-size: 17px;
+        color: rgb(82, 82, 82);
+       }
+       .age_p{
+        color: rgb(237,7,139);
+       }
+       .class_p{
+        color: rgb(251,210,34);
+       }
+       .price_p{
+        color: rgb(31,151,212);
+       }
+       .cart .cart_footer{
+        padding: 20px;
+       }
+       .cart .cart_footer ol li{
+        display: inline-block;
+        margin-left: 25px;
+       }
+       .expert_teacher_section{
+        margin-top: 20px;
+        padding: 0% 15%;
+       }
+       .expert_heading{
+        text-align: center;
+        padding:0% 18%;
+       }
+       .expert_heading h1{
+        text-align: center;
+        font-family:"Fredoka One", cursive;
+        font-size: 35px;
+        font-weight: bold;
+       }
+       .expert_heading p{
+        margin-top: 10px;
+        text-align: center;
+        font-family: "DM Sans", sans-serif;
+        margin-bottom: 50px;
+        color: rgb(66,63,141);;
+       }
+       .experts{
+        display: flex;
+        justify-content: space-between;
+       }
+       .expert_photos{
+        width: 22%;
+        text-align: center;
+       }
+        .expert_photos img{
+        width: 100%;
+       }
+       .expert_photos h3{
+        margin-top: 10px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+       }
+       .expert_photos p{
+        color: rgb(158,158,158);
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 10px;
+       }
+       footer{
+        background-color: rgb(66,85,164);
+        padding: 2% 10%;
+        margin-top: 30px;
+        display: flex;
+        color: white;
+       }
+
+       .footer_first_part{
+            width: 40%;
+            padding: 22px;
+       }
+       .footer_first_part p{
+        margin: 10px 10px 20px 0px;
+
+       }
+       .footer_first_part ul li{
+        display: inline-block;
+        margin-left: 10px;
+        margin-top: 20px;
+        background-color:rgb(72,90,173) ;
+        padding: 10px;
+        border-radius: 50%;
+        width: 17px;
+        height: 17px;
+       }
+
+       .footer_second_part{
+            width: 30%;
+            padding: 30px 30px 30px 100px;
+       }
+       .footer_second_part h3{
+            font-weight: bold;
+       }
+       .footer_second_part ul li{
+        list-style-type: none;     
+        margin-top: 15px;
+       }
+       .footer_second_part ul li a{
+        color: white;
+        text-decoration: none;
+       }
+       .footer_third_part{
+            width: 30%;
+       }
+       .admission{
+        position: absolute;
+        color: white;
+        font-weight: bold;
+        background-color: rgb(255,55,123);
+        padding: 8px 15px;
+        border-radius: 20px;
+        margin: 10px;
+       }
+       .up_arrow{
+        background-color: rgb(237,7,139);
+        position: absolute;
+        margin-left: 95%;
+        color: white;
+        padding: 10px;
+        border-radius: 50%;
+        height: 20px;
+        width: 20px;
+        font-size: 20px;
+        padding-left: 15px;
+        margin-top: -15px;
+       }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo.png.webp" alt="">
+
+            <ul>
+                <li>Home</li>
+                <li>Class</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+                <li><Button>Enroll Now</Button></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="our_section">
+        <div class="our_heading">
+            <h1 class="common_color">Welcome to our <span>kindergarten</span></h1>
+            <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue fowl male signs.</p>
+        </div>
+        <div class="our_details">
+            <div class="our_details_left_part">
+                <div class="our_part_logos">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon1.svg" alt="">
+                </div>
+                <div class="our_part_logos_info">
+                    <h1 style="color: rgb(31,151,212);">Inter School Sports</h1>
+                    <p>The words you use in your written communication speak volumes.</p>
+                </div>
+                <div class="our_part_logos">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon2.svg" alt="">
+                </div>
+                <div class="our_part_logos_info">
+                    <h1 style="color: rgb(251,206,15);">Friendly Environment</h1>
+                    <p>The words you use in your written communication speak volumes.</p>
+                </div>
+                <div class="our_part_logos">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/icon/about-icon3.svg" alt="">
+                </div>
+                <div class="our_part_logos_info">
+                    <h1 style="color:rgb(18,217,223);">Inter School Sports</h1>
+                    <p>The words you use in your written communication speak volumes.</p>
+                </div>
+            </div>
+            <div class="our_image_part">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/about2.png" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <span class="up_arrow"><i class="fa-solid fa-arrow-up"></i></span>
+    <section class="we_offer">
+        <div class="We_offer_heading">
+            <h1 class="common_color">Classes We Offer</h1>
+            <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
+        </div>
+        <div class="boxes">
+            <div class="cart">
+                <div class="cart_header">
+                    <span class="admission">Admission Closed</span>
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img2.png.webp" alt="">
+                </div>
+                <div class="cart_body">
+                    <h2 class="common_color">Intelligent Challenge</h2>
+                    <p>The words you use in your written communication speak volumes.</p>
+                </div>
+                <hr>
+                <div class="cart_footer">
+                    <ol>
+                        <li>
+                            <h2 class="age_p">3-5</h2>
+                            <p>Age Group</p>
+                        </li>
+                        <li>
+                            <h2 class="class_p">30</h2>
+                            <p>Classes</p>
+                        </li>
+                        <li>
+                            <h2 class="price_p">10/h</h2>
+                            <p>Class Price</p>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="cart">
+                <div class="cart_header">
+                    <span class="admission">Admission Closed</span>
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img1.png.webp" alt="">
+                </div>
+                <div class="cart_body">
+                    <h2 class="common_color">Intelligent Challenge</h2>
+                    <p>The words you use in your written communication speak volumes.</p>
+                </div>
+                <hr>
+                <div class="cart_footer">
+                    <ol>
+                        <li>
+                            <h2 class="age_p">3-5</h2>
+                            <p>Age Group</p>
+                        </li>
+                        <li>
+                            <h2 class="class_p">30</h2>
+                            <p>Classes</p>
+                        </li>
+                        <li>
+                            <h2 class="price_p">10/h</h2>
+                            <p>Class Price</p>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="cart">
+                <div class="cart_header">
+                    <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/class-img2.png.webp" alt="">
+                </div>
+                <div class="cart_body">
+                    <h2 class="common_color">Intelligent Challenge</h2>
+                    <p>The words you use in your written communication speak volumes.</p>
+                </div>
+                <hr>
+                <div class="cart_footer">
+                    <ol>
+                        <li>
+                            <h2 class="age_p">3-5</h2>
+                            <p>Age Group</p>
+                        </li>
+                        <li>
+                            <h2 class="class_p">30</h2>
+                            <p>Classes</p>
+                        </li>
+                        <li>
+                            <h2 class="price_p">10/h</h2>
+                            <p>Class Price</p>
+                        </li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="expert_teacher_section">
+        <div class="expert_heading">
+            <h1 class="common_color">Expert Teacher</h1>
+            <p>Our set he for firmament morning sixth subdue today the darkness creeping gathered divide our let god moving today. Moving in fourth air night bring upon lesser subdue.</p>
+        </div>
+
+        <div class="experts">
+            <div class="expert_photos">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team1.png.webp" alt="">
+                <h3>Mr. Jacson Clay</h3>
+                <p>Sports Instructor</p>
+            </div>
+            <div class="expert_photos">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team2.png.webp" alt="">
+                <h3>Mr. Jacson Clay</h3>
+                <p>Sports Instructor</p>
+            </div>
+            <div class="expert_photos">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team3.png.webp" alt="">
+                <h3>Buster Hyman</h3>
+                <p>Sports Instructor</p>
+            </div>
+            <div class="expert_photos">
+                <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/gallery/team1.png.webp" alt="">
+                <h3>Mr. Jacson Clay</h3>
+                <p>Sports Instructor</p>
+            </div>
+            
+        </div>
+
+    </section>
+    <footer>
+        <div class="footer_first_part">
+            <img src="https://preview.colorlib.com/theme/kindergarten/assets/img/logo/logo2_footer.png" alt="">
+            <p>Users and submit their own items. You can create different packages and by connecting with your PayPal or Stripe account charge users for registration.</p>
+            <ul>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook"></i></li>
+                <li><i class="fa-brands fa-pinterest-p"></i></li>
+                <li><i class="fa-brands fa-linkedin-in"></i></li>
+            </ul>
+        </div>
+        <div class="footer_second_part">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Classes</a></li>
+                <li><a href="#">Join with us</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </div>
+        <div class="footer_second_part">
+            <h3>About Us</h3>
+            <ul>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Testimonail</a></li>
+                <li><a href="#">Programming</a></li>
+                <li><a href="#">User Stories</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
